@@ -6,6 +6,8 @@ ENV SQUID_CACHE_DIR=/var/spool/squid \
     SQUID_CONFIG_DIR=/etc/squid \
     SQUID_USER=squid \
     SOFT=squid
+    
+   
 
 # download option
 RUN apk add --no-cache wget bash && cd / && wget --no-check-certificate https://raw.githubusercontent.com/babim/docker-tag-options/master/z%20SCRIPT%20AUTO/option.sh && \
